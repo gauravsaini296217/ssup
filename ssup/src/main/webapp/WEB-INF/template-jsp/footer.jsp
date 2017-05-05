@@ -1,0 +1,1 @@
+<p class="footer">Copyright © 2017 [KDMSL] All Rights Reserved</p> 

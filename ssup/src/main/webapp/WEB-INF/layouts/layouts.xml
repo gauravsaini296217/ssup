@@ -1,0 +1,27 @@
+<!DOCTYPE tiles-definitions PUBLIC  
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+<definition name="base.definition" template="/WEB-INF/template-jsp/layout.jsp">
+<put-attribute name="title" value="Home"/>
+<put-attribute name="header" value="/WEB-INF/template-jsp/header.jsp"/>
+<put-attribute name="menu" value="/WEB-INF/template-jsp/menu.jsp"/>
+<put-attribute name="body" value=""/>
+<put-attribute name="footer" value="/WEB-INF/template-jsp/footer.jsp"/>
+</definition>
+
+<definition name="signin" template="/WEB-INF/template-jsp/loginlayout.jsp">
+<put-attribute name="title" value="Login"/>
+<put-attribute name="header" value="/WEB-INF/template-jsp/header.jsp"/>
+<put-attribute name="menu" value=""/>
+<put-attribute name="body" value="/WEB-INF/jsp/signin.jsp"/>
+<put-attribute name="footer" value="/WEB-INF/template-jsp/footer.jsp"/>
+</definition>
+
+<definition name="request-status" extends="base.definition">
+<put-attribute name="title" value="User"/>
+<put-attribute name="body" value="/WEB-INF/jsp/user/request-status.jsp"/>
+</definition>
+
+</tiles-definitions>       

@@ -1,0 +1,285 @@
+.bclass {
+	
+	/* top right bottom left */
+	margin: 0px 0px 0px 0px;
+	
+	
+}
+
+.header {
+	
+	background-color: #FFCC66;
+	/* top right bottom left */
+	margin: 0px 0px 0px 0px;
+	height:95px;
+	position: relative;
+	width:100%;
+	
+	
+	
+}
+
+
+h2 {
+	
+	
+	padding: 28px 0px 10px 100px; 
+	
+	
+}
+
+img {
+	
+	float: left;
+	align: center;
+	margin: 0px 0px 0px 0px;
+	padding: 10px;
+	height: 80px;
+	width: 120px;
+	
+}
+
+h3 {
+	
+	text-align: center;
+}
+
+/* Login Page Start */
+
+.floating-box{
+	
+	background:white;
+	display:block;
+	margin: 5px 0px 0px 10px;
+	clear:left;
+	float:left;
+	width:60%;
+	box-shadow:0 0 0.1cm rgba(0,0,0,0.5);
+	/*border: 1px solid grey;*/
+	
+}
+
+.login{
+	
+	float:right;
+	margin: 10px 10px 0px 0px;
+	width:35%;
+	
+}
+
+.login-box{
+	
+	position: fixed;
+	display:block;
+	width:32%;
+	height:400px;
+	box-shadow:0 0 0.5cm rgba(0,0,0,0.5);
+	background-color: #f2f2f2;
+    padding: 20px;
+}
+
+
+input[type=text], input[type=password], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.errorblock{
+	
+	color:#ff0000;
+	background-color:#ffeeee;
+	border: 3px solid #ff0000;
+	padding: 8px;
+	margin: 16px;
+	
+}
+
+
+.hometext {
+    font-family: 'Roboto', sans-serif;
+    color: #888;
+    line-height: 25px;
+    text-align: left;
+    padding:0px 5px 70px 5px;
+    
+}
+
+/* Login Page End */
+
+/* Menu Start */
+
+ul {
+	position:fixed;
+    list-style-type: none;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    background-color: #f3f3f3;
+    width:100%;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: #666;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    color: white;
+    background-color: #4CAF50;
+    
+}
+
+li a.active {
+    color: white;
+    background-color: #4CAF50;
+}
+
+.right{
+	
+	float:right;
+}
+
+/* Menu End */
+
+
+/* User Page */
+
+.frm{
+	
+	margin: 0px 0px 0px 0px;
+	
+}
+
+/*.tmargin{
+	
+	background:white;
+	display:block;
+	margin: 5px 0px 0px 5px;
+	clear:left; 
+	float:left;
+	width:99.4%;
+	box-shadow:0 0 0.025cm rgba(0,0,0,0.5);
+	border: 1px solid grey;
+	
+}
+*/
+
+
+.request-status-box{
+	
+	
+	margin:auto;
+	margin-top:5%;
+	display:block;
+	width:32%;
+	box-shadow:0 0 0.025cm rgba(0,0,0,0.5);
+	background-color: #f2f2f2;
+    padding: 20px;
+}
+
+
+.input-box input[type=text], .input-box input[type=password], select {
+    width: 100%;
+    padding: 6px 7px;
+    margin: 6px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.input-box input[type=submit] {
+    width: 30%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 10px;
+    margin: auto;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.input-box input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.error {
+	color: #ff0000;
+}
+
+.result-view{
+	
+	margin:auto;
+	margin-top:1%;
+	display:block;
+	width:100%;
+	box-shadow:0 0 0.0025cm rgba(0,0,0,0.5);
+	background-color: white;
+    padding: 20px 5px;
+}
+
+
+.result-table th{
+	
+	border: 1px solid #ddd;
+	text-align:left;
+	padding:5px 0px;
+		
+}
+
+.result-table td{
+	
+	border: 1px solid #ddd;
+	
+		
+}
+
+.result-table {
+	
+	border-collapse: collapse;
+	width:99%;
+}
+
+
+.result-table tr:nth-child(odd) {background-color: #f2f2f2}
+
+.footer {
+	
+  position: fixed;
+  right: 0px;
+  bottom: -20px;
+  left: 0px;
+  padding: 1rem;
+  background-color: #333333;
+  text-align: center;
+  color:#cccccc;
+	
+}

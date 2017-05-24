@@ -2,6 +2,7 @@ package ssup.dao;
 
 import java.util.List;
 
+import ssup.model.DailyOnlineWork;
 import ssup.model.RequestStatusResult;
 import ssup.model.User;
 
@@ -11,5 +12,7 @@ public interface UserDao {
 	List<RequestStatusResult> findByInward(String input);
 	List<RequestStatusResult> findByAadhaar(String input);
 	List<RequestStatusResult> findByUrn(String input);
+	
+	List<DailyOnlineWork> findByUrnDaily(String input);	
 	
 }

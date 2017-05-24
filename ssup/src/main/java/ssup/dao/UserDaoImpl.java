@@ -3,13 +3,11 @@ package ssup.dao;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.hibernate.Session;
 import org.hibernate.SessionFactory;
-import org.hibernate.loader.plan.exec.process.spi.ReturnReader;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
-import org.springframework.transaction.annotation.Transactional;
 
+import ssup.model.DailyOnlineWork;
 import ssup.model.RequestStatusResult;
 import ssup.model.User;
 
@@ -91,7 +89,21 @@ public class UserDaoImpl implements UserDao {
 		}
 	}
 	
-	
+	@Override
+	@SuppressWarnings("unchecked")
+	public List<DailyOnlineWork> findByUrnDaily(String input) {
+		List<DailyOnlineWork> resultList=new ArrayList<DailyOnlineWork>();
+		resultList=sessionFactory.getCurrentSession().createQuery("from DailyOnlineWork where urn=?")
+				.setParameter(0, input)
+				.list();
+		if(resultList.size()>0)
+		{
+			return resultList;
+		}
+		else{
+		return null;
+		}
+	}
 	
 
 }

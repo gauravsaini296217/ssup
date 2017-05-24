@@ -24,28 +24,22 @@
 
             <table class="result-table">
 
-                <tr><th>Inward No</th>
-                    <th>Name of Resident</th>
-                    <th>Language</th>
-                    <th>Aadhaar No</th>
-                    <th>Mobile No</th>
-                    <th>State</th>
-                    <th>Entry Date</th>
-                    <th>Urn No</th>
-                    <th>Status</th>
-                    <th>Urn Status Date</th>
+                <tr><th>SNo</th>
+                    <th>Urn</th>
+                    <th>Urn Status</th>
+                    <th>Role</th>
+                    <th>Username</th>
+                    <th>UserID</th>
+                    <th>Process Date</th>
                 </tr>    
                 <c:forEach var="item" items="${result}">
-                    <tr>   <td>${item.inwardno}</td>
-                        <td>${item.nameofresident}</td>
-                        <td>${item.language}</td>   
-                        <td>${item.aadharno}</td>
-                        <td>${item.mobileno}</td>
-                        <td>${item.state}</td>
-                        <td>${item.entrydate}</td>
-                        <td>${item.URNO}</td>
-                        <td>${item.STATUSU}</td>
-                        <td>${item.URNSTATUSDATE}</td>
+                    <tr>   <td>${item.sno}</td>
+                        <td>${item.urn}</td>
+                        <td>${item.urnStatus}</td>   
+                        <td>${item.p_role}</td>
+                        <td>${item.username}</td>
+                        <td>${item.userId}</td>
+                        <td>${item.processDate}</td>
                     </tr>
                 </c:forEach>
       

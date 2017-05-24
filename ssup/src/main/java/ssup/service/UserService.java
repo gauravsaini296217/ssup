@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import ssup.dao.UserDao;
+import ssup.model.DailyOnlineWork;
 import ssup.model.RequestStatusResult;
 
 @Service("userService")
@@ -34,5 +35,12 @@ public class UserService {
 	{
 		
 		return userDao.findByUrn(input);
+	}
+	
+	@Transactional
+	public List<DailyOnlineWork> findByURNDaily(String input)
+	{
+		
+		return userDao.findByUrnDaily(input);
 	}
 }

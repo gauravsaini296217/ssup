@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
 import ssup.model.DailyOnline;
+import ssup.model.DailyOnlineWork;
 import ssup.model.RequestStatus;
 import ssup.model.RequestStatus.InputType;
 import ssup.model.RequestStatusResult;
@@ -146,23 +147,26 @@ public class SSUPController{
 	@RequestMapping(value={"/user/dailyonline"} , method=RequestMethod.POST)
 	public ModelAndView dailyonlinePost(@Valid @ModelAttribute("dailyOnline") DailyOnline dailyOnline, BindingResult result)
 	{
-		List<RequestStatusResult> list=new ArrayList<RequestStatusResult>();
+		List<DailyOnlineWork> list=new ArrayList<DailyOnlineWork>();
 		
 		System.out.println("Urn:"+dailyOnline.getUrn());
 		
-		if(result.hasErrors())
+		if(dailyOnline.getUrn().length()!=8)
 		{
-			System.out.println("error");	
+			result.rejectValue("urn", "request.error", "Urn is 8 digit No.");	
 			ModelAndView model=new ModelAndView("dailyonline");
 			return model;
 			
-			
 		}
+		else{
 		
+		list=userService.findByURNDaily(dailyOnline.getUrn());	
+			
 		ModelAndView model=new ModelAndView("dailyonline");
 		model.addObject("dailyOnline", new DailyOnline());
 		model.addObject("result", list);	
 		return model;
+		}
 	}
 	
 	

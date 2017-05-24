@@ -11,6 +11,14 @@
 <put-attribute name="footer" value="/WEB-INF/template-jsp/footer.jsp"/>
 </definition>
 
+<definition name="base.definition2" template="/WEB-INF/template-jsp/layout2.jsp">
+<put-attribute name="title" value="Home"/>
+<put-attribute name="header" value="/WEB-INF/template-jsp/header2.jsp"/>
+<put-attribute name="menu" value="/WEB-INF/template-jsp/menu.jsp"/>
+<put-attribute name="body" value=""/>
+<put-attribute name="footer" value="/WEB-INF/template-jsp/footer.jsp"/>
+</definition>
+
 <definition name="signin" template="/WEB-INF/template-jsp/loginlayout.jsp">
 <put-attribute name="title" value="Login"/>
 <put-attribute name="header" value="/WEB-INF/template-jsp/header.jsp"/>
@@ -27,6 +35,11 @@
 <definition name="dailyonline" extends="base.definition">
 <put-attribute name="title" value="DailyOnline"/>
 <put-attribute name="body" value="/WEB-INF/jsp/user/daily-online.jsp"/>
+</definition>
+
+<definition name="dashboard" extends="base.definition2">
+<put-attribute name="title" value="Dashboard"/>
+<put-attribute name="body" value="/WEB-INF/jsp/user/dashboard.jsp"/>
 </definition>
 
 </tiles-definitions>       

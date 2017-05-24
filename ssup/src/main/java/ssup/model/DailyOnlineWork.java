@@ -8,6 +8,8 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 
 @Entity
 @Table(name="ssupdailyonlinework")
@@ -72,6 +74,7 @@ public class DailyOnlineWork {
 	}
 	
 	@Column(name="ProcessDate", nullable=true, columnDefinition="date")
+	@Temporal(TemporalType.DATE)
 	public Date getProcessDate() {
 		return processDate;
 	}

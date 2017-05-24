@@ -28,4 +28,11 @@ public class UserService {
 		
 		return userDao.findByAadhaar(input);
 	}
+	
+	@Transactional
+	public List<RequestStatusResult> findByURN(String input)
+	{
+		
+		return userDao.findByUrn(input);
+	}
 }

@@ -24,4 +24,9 @@
 <put-attribute name="body" value="/WEB-INF/jsp/user/request-status.jsp"/>
 </definition>
 
+<definition name="dailyonline" extends="base.definition">
+<put-attribute name="title" value="DailyOnline"/>
+<put-attribute name="body" value="/WEB-INF/jsp/user/daily-online.jsp"/>
+</definition>
+
 </tiles-definitions>       

@@ -45,6 +45,7 @@ http://www.springframework.org/schema/tx/spring-tx-4.3.xsd">
 <value>ssup.model.User</value>
 <value>ssup.model.UserRole</value>
 <value>ssup.model.RequestStatusResult</value>
+<value>ssup.model.DailyOnlineWork</value>
 </list>
 </property>
 <property name="hibernateProperties">

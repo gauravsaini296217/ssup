@@ -76,9 +76,19 @@ public class UserDaoImpl implements UserDao {
 
 
 	@Override
+	@SuppressWarnings("unchecked")
 	public List<RequestStatusResult> findByUrn(String input) {
-		// TODO Auto-generated method stub
+		List<RequestStatusResult> resultList=new ArrayList<RequestStatusResult>();
+		resultList=sessionFactory.getCurrentSession().createQuery("from RequestStatusResult where URNO=?")
+				.setParameter(0, input)
+				.list();
+		if(resultList.size()>0)
+		{
+			return resultList;
+		}
+		else{
 		return null;
+		}
 	}
 	
 	

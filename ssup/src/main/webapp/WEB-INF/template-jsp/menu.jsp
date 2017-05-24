@@ -1,8 +1,8 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <body>
 <ul>
-  <li><a href="#home">Request Status</a></li>
-  <li><a href="#news">News</a></li>
+  <li><a href="${pageContext.request.contextPath}/user/request-status">Request Status</a></li>
+  <li><a href="${pageContext.request.contextPath}/user/dailyonline">Daily Online</a></li>
   <li><a href="#contact">Contact</a></li>
   <li class="right"><a href="javascript:formSubmit()">${pageContext.request.userPrincipal.name} Logout</a></li>
 </ul>
